@@ -2,7 +2,7 @@
 import './styles.css'
 import { BrowserRouter, Routes, Route, NavLink } from "react-router";
 import React from "react"
-import Content from './content';
+import Content from './Content.tsx';
 
 function App() {
   const [data, setData] = React.useState([] as Planet[])
