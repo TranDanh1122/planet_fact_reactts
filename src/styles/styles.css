@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .h1 {
+        @apply font-medium text-[5rem] leading-[7rem];
+    }
+    .h2 {
+        @apply font-medium text-[2.5rem] leading-[3rem] tracking-[-1.5px];
+    }
+    .h3 {
+        @apply font-bold font-spartan text-[0.75rem] leading-6 tracking-[2.6px];
+    }
+    .h4 {
+        @apply font-bold font-spartan text-[0.625rem] leading-6 tracking-[1px];
+    }
+    .body {
+        @apply font-spartan text-[0.825rem] leading-6;
+    }
+}
+body,html {
+    width: 100%;
+    height: 100%;
+    font-family: "Antonio", sans-serif;
+}
+#root {
+    width: 100%;
+    min-height: 100vh;
+}
