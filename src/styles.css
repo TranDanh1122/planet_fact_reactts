@@ -778,6 +778,11 @@ video {
   border-color: rgb(131 131 145 / var(--tw-border-opacity, 1));
 }
 
+.border-b-cyan {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(65 158 187 / var(--tw-border-opacity, 1));
+}
+
 .bg-cyan {
   --tw-bg-opacity: 1;
   background-color: rgb(65 158 187 / var(--tw-bg-opacity, 1));
@@ -786,6 +791,11 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-dark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(7 7 36 / var(--tw-bg-opacity, 1));
 }
 
 .object-cover {
@@ -859,6 +869,16 @@ body,html {
   min-height: 100vh;
 }
 
+@media (min-width: 0) and (max-width: 767px) {
+  .mb\:h4 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 0.625rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+  }
+}
+
 .hover\:border-t-4:hover {
   border-top-width: 4px;
 }
@@ -877,6 +897,14 @@ body,html {
     position: fixed;
   }
 
+  .mb\:absolute {
+    position: absolute;
+  }
+
+  .mb\:left-0 {
+    left: 0px;
+  }
+
   .mb\:right-0 {
     right: 0px;
   }
@@ -887,6 +915,14 @@ body,html {
 
   .mb\:z-10 {
     z-index: 10;
+  }
+
+  .mb\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .mb\:-mt-32 {
+    margin-top: -8rem;
   }
 
   .mb\:flex {
@@ -905,8 +941,16 @@ body,html {
     width: 100%;
   }
 
+  .mb\:max-w-full {
+    max-width: 100%;
+  }
+
   .mb\:max-w-none {
     max-width: none;
+  }
+
+  .mb\:flex-row {
+    flex-direction: row;
   }
 
   .mb\:flex-col {
@@ -921,9 +965,29 @@ body,html {
     gap: 0.5rem;
   }
 
+  .mb\:border-none {
+    border-style: none;
+  }
+
+  .mb\:border-b-cyan {
+    --tw-border-opacity: 1;
+    border-bottom-color: rgb(65 158 187 / var(--tw-border-opacity, 1));
+  }
+
   .mb\:bg-dark {
     --tw-bg-opacity: 1;
     background-color: rgb(7 7 36 / var(--tw-bg-opacity, 1));
+  }
+
+  @media (min-width: 0) and (max-width: 767px) {
+    .mb\:mb\:bg-dark {
+      --tw-bg-opacity: 1;
+      background-color: rgb(7 7 36 / var(--tw-bg-opacity, 1));
+    }
+  }
+
+  .mb\:bg-none {
+    background-image: none;
   }
 
   .mb\:px-2 {
@@ -934,6 +998,11 @@ body,html {
   .mb\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .mb\:py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 
   .mb\:py-4 {

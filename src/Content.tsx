@@ -11,7 +11,7 @@ export default function Content({ data }: { data: Planet[] }): React.JSX.Element
     const planet: Planet = data[parseInt(params.id ?? "1") - 1]
     return (
         <div className='w-[90%] max-w-[1200px] mx-auto'>
-            <div className='flex flex-wrap  items-center justify-between  mt-32'>
+            <div className='flex flex-wrap  items-center justify-between relative mt-32'>
 
                 <div className="w-[20rem] h-[20rem] relative tb:w-full">
                     {
@@ -37,10 +37,10 @@ export default function Content({ data }: { data: Planet[] }): React.JSX.Element
                         </span>
                     </div>
 
-                    <div className='flex-col flex items-start gap-4 mt-10'>
-                        <span onClick={() => handleChangeTab("overview")} className={clsx('h3 py-4 px-8 uppercase border-[1px] border-solid border-gray w-full cursor-pointer', { "bg-cyan": state.tab == "overview" })}><span className='text-white text-opacity-50'>01</span> OVERVIEW</span>
-                        <span onClick={() => handleChangeTab("structure")} className={clsx('h3 py-4 px-8 uppercase border-[1px] border-solid border-gray w-full cursor-pointer', { "bg-cyan": state.tab == "structure" })}><span className='text-white text-opacity-50'>02</span> Internal Structure</span>
-                        <span onClick={() => handleChangeTab("geology")} className={clsx('h3 py-4 px-8 uppercase border-[1px] border-solid border-gray w-full cursor-pointer', { "bg-cyan": state.tab == "geology" })}><span className='text-white text-opacity-50'>03</span> Surface Geology</span>
+                    <div className='flex-col flex items-start gap-4 mb:gap-2 mb:-mt-32 mt-10 mb:w-full mb:max-w-full mb:absolute mb:top-0 mb:left-0 mb:flex-row mb:mb:bg-dark '>
+                        <span onClick={() => handleChangeTab("overview")} className={clsx('h3 mb:h4 py-4 mb:py-2 px-8 mb:px-4 uppercase border-[1px] border-solid border-gray mb:border-none w-full cursor-pointer mb:bg-none', { "bg-cyan mb:bg-dark": state.tab == "overview" })}><span className='text-white text-opacity-50 mb:hidden'>01</span> OVERVIEW</span>
+                        <span onClick={() => handleChangeTab("structure")} className={clsx('h3 mb:h4 py-4 mb:py-2 px-8 mb:px-4 uppercase border-[1px] border-solid border-gray mb:border-none w-full cursor-pointer', { "bg-cyan mb:bg-dark ": state.tab == "structure" })}><span className='text-white text-opacity-50 mb:hidden'>02</span> Internal <span className="mb:hidden">Structure</span> </span>
+                        <span onClick={() => handleChangeTab("geology")} className={clsx('h3 mb:h4 py-4 mb:py-2 px-8 mb:px-4 uppercase border-[1px] border-solid border-gray mb:border-none w-full cursor-pointer', { "bg-cyan mb:bg-dark ": state.tab == "geology" })}><span className='text-white text-opacity-50 mb:hidden'>03</span> Surface  <span className="mb:hidden">Geology</span></span>
                     </div>
                 </div>
             </div>
