@@ -560,13 +560,6 @@ video {
   line-height: 7rem;
 }
 
-.h2 {
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 3rem;
-  letter-spacing: -1.5px;
-}
-
 .h3 {
   font-family: 'League Spartan', sans-serif;
   font-size: 0.75rem;
@@ -589,6 +582,26 @@ video {
   line-height: 1.5rem;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.left-\[50\%\] {
+  left: 50%;
+}
+
+.top-\[60\%\] {
+  top: 60%;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -599,25 +612,24 @@ video {
   margin-bottom: 2rem;
 }
 
-.my-24 {
-  margin-top: 6rem;
-  margin-bottom: 6rem;
-}
-
-.mt-32 {
-  margin-top: 8rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
+.ml-auto {
+  margin-left: auto;
 }
 
 .mt-1 {
   margin-top: 0.25rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .mt-24 {
   margin-top: 6rem;
+}
+
+.mt-32 {
+  margin-top: 8rem;
 }
 
 .block {
@@ -628,8 +640,28 @@ video {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
 .h-3 {
   height: 0.75rem;
+}
+
+.h-4 {
+  height: 1rem;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
+.h-\[13\.5rem\] {
+  height: 13.5rem;
 }
 
 .h-\[20rem\] {
@@ -642,6 +674,18 @@ video {
 
 .w-3 {
   width: 0.75rem;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-\[11rem\] {
+  width: 11rem;
 }
 
 .w-\[20rem\] {
@@ -668,8 +712,13 @@ video {
   max-width: 1440px;
 }
 
-.flex-1 {
-  flex: 1 1 0%;
+.translate-x-\[-50\%\] {
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .flex-col {
@@ -708,6 +757,10 @@ video {
   gap: 2rem;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .border-\[1px\] {
   border-width: 1px;
 }
@@ -723,6 +776,16 @@ video {
 .border-gray {
   --tw-border-opacity: 1;
   border-color: rgb(131 131 145 / var(--tw-border-opacity, 1));
+}
+
+.bg-cyan {
+  --tw-bg-opacity: 1;
+  background-color: rgb(65 158 187 / var(--tw-bg-opacity, 1));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
 .object-cover {
@@ -807,4 +870,145 @@ body,html {
 .hover\:border-cyan:hover {
   --tw-border-opacity: 1;
   border-color: rgb(65 158 187 / var(--tw-border-opacity, 1));
+}
+
+@media (min-width: 0) and (max-width: 767px) {
+  .mb\:fixed {
+    position: fixed;
+  }
+
+  .mb\:right-0 {
+    right: 0px;
+  }
+
+  .mb\:top-0 {
+    top: 0px;
+  }
+
+  .mb\:z-10 {
+    z-index: 10;
+  }
+
+  .mb\:flex {
+    display: flex;
+  }
+
+  .mb\:hidden {
+    display: none;
+  }
+
+  .mb\:h-full {
+    height: 100%;
+  }
+
+  .mb\:w-full {
+    width: 100%;
+  }
+
+  .mb\:max-w-none {
+    max-width: none;
+  }
+
+  .mb\:flex-col {
+    flex-direction: column;
+  }
+
+  .mb\:items-start {
+    align-items: flex-start;
+  }
+
+  .mb\:gap-2 {
+    gap: 0.5rem;
+  }
+
+  .mb\:bg-dark {
+    --tw-bg-opacity: 1;
+    background-color: rgb(7 7 36 / var(--tw-bg-opacity, 1));
+  }
+
+  .mb\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .mb\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .mb\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .mb\:pt-16 {
+    padding-top: 4rem;
+  }
+
+  .mb\:text-center {
+    text-align: center;
+  }
+
+  .mb\:text-\[1rem\] {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .tb\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tb\:flex {
+    display: flex;
+  }
+
+  .tb\:w-full {
+    width: 100%;
+  }
+
+  .tb\:max-w-\[350px\] {
+    max-width: 350px;
+  }
+
+  .tb\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .tb\:items-center {
+    align-items: center;
+  }
+
+  .tb\:items-stretch {
+    align-items: stretch;
+  }
+
+  .tb\:justify-center {
+    justify-content: center;
+  }
+
+  .tb\:justify-between {
+    justify-content: space-between;
+  }
+
+  .tb\:gap-4 {
+    gap: 1rem;
+  }
+
+  .tb\:pt-8 {
+    padding-top: 2rem;
+  }
+
+  .tb\:text-center {
+    text-align: center;
+  }
+
+  .tb\:hover\:border-b-4:hover {
+    border-bottom-width: 4px;
+  }
+
+  .tb\:hover\:border-t-0:hover {
+    border-top-width: 0px;
+  }
 }
