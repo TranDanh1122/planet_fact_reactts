@@ -23,6 +23,13 @@ body,html {
     width: 100%;
     height: 100%;
     font-family: "Antonio", sans-serif;
+    background-image: url("./assets/background-stars.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #070724;
+    color: #fff;
+    font-size: 18px;
 }
 #root {
     width: 100%;
